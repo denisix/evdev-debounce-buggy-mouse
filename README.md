@@ -4,18 +4,18 @@ The patch to evdev library to debounce fix the double clicks of broken mouse but
 This instructions helped me to fix the issue with my broken mouse "RAPOO 5G Wireless Device", the issue was with single clicks often recognized as double clicks.
 
 The instruction:
-```bash
+```sh
 git clone https://github.com/denisix/evdev-debounce-buggy-mouse
-bash evdev-debounce-buggy-mouse/build
+sh evdev-debounce-buggy-mouse/build
 ```
 
 Once ready you can install it:
-```bash 
+```sh 
 sudo dpkg -i xserver-xorg-input-evdev_2.8.2-1ubuntu2_amd64.deb
 ```
 After that please relogin (restart Xorg) and check the device by it's ID:
 
-```bash
+```sh
 $ xinput --list|grep pointer
 ⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
 ⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
@@ -25,7 +25,7 @@ $ xinput --list|grep pointer
 ```
 
 My mouse RAPOO mouse has ID = 11:
-```bash
+```sh
 $ xinput --list-props 11|grep Debounce
 	Evdev Debounce Delay (298):	0
 ```
