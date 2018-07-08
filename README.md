@@ -21,7 +21,7 @@ patch -p 1 < ../evdev-debounce.patch
 dch -i
 debuild -us -uc -b
 cd ..
-sudo dpkg -i xserver-xorg-input-evdev_2.8.2-1ubuntu2_amd64.deb
+sudo dpkg -i xserver-xorg-input-evdev_*ubuntu2_*.deb
 ```
 
 ### Configuration:
