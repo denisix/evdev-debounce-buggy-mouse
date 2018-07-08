@@ -1,5 +1,5 @@
 #!/bin/sh
-cp evdev-debounce.patch /tmp/
+cp ./evdev-debounce.patch /tmp/
 cd /tmp
 apt-get source xserver-xorg-input-evdev-dev
 sudo apt-get build-dep xserver-xorg-input-evdev-dev

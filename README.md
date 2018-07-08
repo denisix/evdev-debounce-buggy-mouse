@@ -6,7 +6,8 @@ This instructions helped me to fix the issue with my broken mouse "RAPOO 5G Wire
 The instruction:
 ```sh
 git clone https://github.com/denisix/evdev-debounce-buggy-mouse
-sh evdev-debounce-buggy-mouse/build
+cd evdev-debounce-buggy-mouse
+sh ./build.sh
 ```
 
 Once ready you can install it:
