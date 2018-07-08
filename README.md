@@ -55,10 +55,10 @@ cat /usr/share/X11/xorg.conf.d/99-rapoo.conf
 ```xorg
 Section "InputClass"
     Identifier "evdev-mouse-rapoo"
-	  MatchProduct "RAPOO RAPOO 5G Wireless Device"
+    MatchProduct "RAPOO RAPOO 5G Wireless Device"
     MatchIsPointer "on"
     Driver "evdev"
-	  Option "DebounceDelay" "100"
+    Option "DebounceDelay" "20"
 EndSection
 ```
 
