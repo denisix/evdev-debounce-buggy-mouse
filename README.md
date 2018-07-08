@@ -64,8 +64,8 @@ EndSection
 
 
 ##### based on original author patch & instructions from here:
-_Matt Whitlock freedesktop at mattwhitlock.name
+_Matt Whitlock freedesktop at mattwhitlock.name_
 
-Mon Aug 13 14:47:12 PDT 2012_
+_Mon Aug 13 14:47:12 PDT 2012_
 
 https://lists.x.org/archives/xorg-devel/2012-August/033225.html
