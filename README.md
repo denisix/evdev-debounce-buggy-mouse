@@ -44,7 +44,10 @@ $ xinput --list-props 11|grep Debounce
 ```
 
 You can find the best debounce value and check if it solves the issue:
-$ xinput --set-prop --type=int --format=32 11 298 **20**
+```sh
+$ xinput --set-prop --type=int --format=32 11 298 20
+```
+in this command **11** - the xinput ID, **298** - the ID property, **20** - the debounce timeout value
 
 you can check if the fix works well:
 `xev | awk '/ButtonRelease/ {print $1,i++}'`
